@@ -23,7 +23,8 @@ phases:
   build:
     commands:
       # - katalon-execute.sh -browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/TS_RegressionTest"
-      - katalon-execute.sh -browserType="Kobiton Device" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/Regression Tests"  -e KATALON_OPTS="-kobitonDeviceId=7479 --config -kobiton.authentication.username=cuongmanhnguyen -kobiton.authentication.password=Mkkbt123!"
+
+      - katalon-execute.sh -browserType="Kobiton Device" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/Regression Tests" --config -kobiton.authentication.username=cuongmanhnguyen -kobiton.authentication.password=Mkkbt123!
       # - command
   #post_build:
     #commands:
