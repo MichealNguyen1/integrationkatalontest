@@ -1,0 +1,41 @@
+
+# TODO: Write description for this file.
+
+version: 0.2
+
+#env:
+  #variables:
+     # key: "value"
+     # key: "value"
+  #parameter-store:
+     # key: "value"
+     # key: "value"
+
+phases:
+  #install:
+    #commands:
+      # - command
+      # - command
+  #pre_build:
+    #commands:
+      # - command
+      # - command
+  build:
+    commands:
+      #- katalon-execute.sh -browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/TS_RegressionTest"
+      - katalon-execute.sh -e KATALON_OPTS="-kobitonDeviceId=7479 -testSuitePath='Test Suites/Regression Tests' -browserType='Kobiton Device' --config -kobiton.authentication.username=cuongmanhnguyen -kobiton.authentication.password=Mkkbt123!" katalonstudio/katalon
+      # - command
+  #post_build:
+    #commands:
+      # - command
+      # - command
+artifacts:
+  files:
+    - report/**
+    # - location
+  #name: $(date +%Y-%m-%d)
+  #discard-paths: yes
+  #base-directory: location
+#cache:
+  #paths:
+    # - paths
